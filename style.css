@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 100%;
+	font-family: Cambria;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+body{
+	background-image: url("img/prism/prism.png");
+}
+
+/* ########### Barra ###########*/
+
+.barra {
+	position: absolute;
+	width: 100%;
+	background-color: #242424;
+	text-decoration: none;
+	border-bottom: 2pt solid #444444;
+	}
+
+.barra label{
+	width: auto;
+}
+
+.barra .btnMenu{
+	color: blanchedalmond; /* ffebcd */
+	border: 1px solid aliceblue;
+	width: auto;
+	padding: 5px;
+	margin: 5px;
+	}
+
+.btnMenu:hover{
+	background-color: #7f7566;
+	cursor: pointer;
+}
+
+#chkMenu{
+	display: none;
+}
+
+#chkMenu:checked ~ .menu{
+	left: 0%;
+	display: block;
+}
+
+/* ########### Menu ###########*/
+
+.menu{
+	position: absolute;
+	background-color: #242424;
+	color: blanchedalmond;
+	width: 15%;
+	min-height: calc(100vh - 41px);
+	left: -240px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	padding: 5pt;
+	border-right: 2pt solid #444444;
+	margin-top: 41px;
+	display: flex;
+}
+
+.menu li{
+	padding: 5px 5px 5px 5px;
+	border-top: 1px solid blanchedalmond;
+}
+
+.menu li:hover{
+	background-color: #7f7566;
+}
+
+.menu ul{
+	padding: 0;
+}
+
+.menu a{
+	color: blanchedalmond;
+}
+
+/* ########### Texto ###########*/
+
+/*Txt Area A*/
+.textarea{
+	padding: 15px;
+	width: 70%;
+	height: auto;
+	color: #242424;
+	background-color: blanchedalmond;
+	text-align: justify;
+	margin-left: 15%;
+}
+
+.textarea a{
+	float: none;
+	width: auto;
+	color: midnightblue;
+}
+
+.textarea br{
+	float: none;
+}
+
+.textarea p{
+	margin-bottom: 5pt;
+}
+
+.textarea h1{
+	text-align: center;
+}
+
+.textarea h1, h2
+{
+	margin-bottom: 10pt;
+	margin-top: 10pt;
+}
+
+
+/*Txt Area Black*/
+.textareab{
+	padding: 15px;
+	width: 70%;
+	height: auto;
+	color:blanchedalmond;
+	background-color: #242424;
+	text-align: justify;
+	margin-left: 15%;
+}
+
+.textareab a{
+	float: none;
+	width: auto;
+	color: cadetblue;
+}
+
+.textareab br{
+	float: none;
+}
+
+.textareab p{
+	margin-bottom: 5pt;
+}
+.textareab h1{
+	text-align: center;
+}
+
+.textareab h1, h2
+{
+	margin-bottom: 10pt;
+}
+
+/* txts */
+#txthm.textareab{
+	font-size: 18pt;
+}
+
+#abhm.textarea{
+	font-size: 18pt;
+}
+
+.txtcv{
+	font-size: 12pt;
+}
+
+.txtcv p{
+	width: auto;
+	margin: 10pt;
+}
+
+.columntxt{
+	column-count: 2;
+}
+
+.columntxt ul{
+	padding: 0;
+}
+
+.columntxt li{
+	margin-right: 5pt;
+	margin-top: 5pt;
+}
+
+.columntxt h3{
+	margin-top: 10pt;
+}
+
+#perfil{
+	width: 256pt;
+	float: right;
+	border-radius: 35%;
+	padding-left: 15px;
+}
+
+.projico{
+	 width: 64px;
+	 margin-right: 10pt;
+}
+
+.txtproj{
+	border-bottom: 2pt solid #444444;
+}
+
+.txtproj a{
+	float:right; 
+	margin: 3pt;
+}
+
+.txtproj h3{
+	width:auto; 
+	margin-bottom: 10pt;
+}
+
+#tbxContato{
+	height: 140pt;
+	font-size: 14pt;
+	resize: none;
+	display: inline-block;
+}
